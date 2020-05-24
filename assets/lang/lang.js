@@ -105,7 +105,11 @@ var dictionary = {
 		"email" : "Email",
 		"phone" : "Phone",
 		"send-message" : "Send Message",
-		"copyright" : "Copyright"
+		"copyright" : "Copyright",
+		"form-firstname" : "First Name",
+		"form-lastname" : "Last Name",
+		"form-email" : "Your Email",
+		"form-message" : "Your Message"
 	},
 	'fr': {
 		"home" : "Accueil",
@@ -209,7 +213,11 @@ var dictionary = {
 		"email" : "Email",
 		"phone" : "Téléphone",
 		"send-message" : "Envoyer le message",
-		"copyright" : "Droits d'auteur"
+		"copyright" : "Droits d'auteur",
+		"form-firstname" : "Prénom",
+		"form-lastname" : "Nom",
+		"form-email" : "Votre email",
+		"form-message" : "Votre message"
 	},
 	'ar': {
 		"home" : "الصفحة الرئيسية",
@@ -312,12 +320,17 @@ var dictionary = {
 		"email" : "البريد الإلكتروني",
 		"phone" : "الهاتف",
 		"send-message" : "أرسل رسالة",
-		"copyright" : "حقوق النشر"
+		"copyright" : "حقوق النشر",
+		"form-firstname" : "الاسم",
+		"form-lastname" : "النسب",
+		"form-email" : "بريدك الالكتروني",
+		"form-message" : "رسالتك"
 	},
 };
 
 var translate = function (jsdata)
 {	
+	
 	$("[data-lang]").each (function (index)
 	{
 		var strTr = jsdata [$(this).attr ('data-lang')];
@@ -326,6 +339,14 @@ var translate = function (jsdata)
 			return (this.nodeType == 3);
 		}).remove();
 		$(this).prepend(strTr);
+	});
+
+	$('form').find("input[type=text], input[type=email], textarea").each(function(ev)
+	{
+		var strTr = jsdata [$(this).attr ('data-lang')];
+		if(!$(this).val()) { 
+	   		$(this).attr("placeholder", strTr);
+		}
 	});
 }
 
@@ -358,3 +379,7 @@ var deleteRTL = function () {
 	$('html').attr("lang", "en");
 	$('body').removeClass('kh-rtl');
 }
+
+$(document).ready(function(){ 
+	
+  });
