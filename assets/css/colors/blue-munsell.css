@@ -1,0 +1,129 @@
+.new .navbar-toggler .icon, .new .navbar-toggler .icon::after, .new .navbar-toggler .icon::before {
+  background-color: #2196F3; }
+
+.white-vertion .page-item.active .page-link {
+  color: #2196F3; }
+
+.dark-vertion .page-item.active .page-link {
+  color: #2196F3; }
+
+.kh-header .navbar-nav li a:hover {
+  color: #2196F3; }
+
+.kh-home-2 .kh-header-info ul.kh-home-contact li:hover .fa {
+  color: #2196F3; }
+
+.kh-home .kh-header-info .kh-promo span {
+  background-color: #2196F3; }
+.kh-home .kh-header-info ul li:hover .fa {
+  color: #2196F3; }
+
+.kh-about-tag ul li span {
+  border: 1px solid #2196F3; }
+  .kh-about-tag ul li span:hover {
+    background-color: #2196F3; }
+
+.kh-progress path:nth-child(2) {
+  stroke: #2196F3; }
+
+.candidatos .parcial .percentagem {
+  background: #2196F3; }
+
+.kh-experince .kh-education-deatils .kh-education-item .kh-eduyear {
+  color: #2196F3; }
+
+.kh-work .kh-experience-deatils .kh-work-item .kh-eduyear {
+  color: #2196F3; }
+
+.kh-experince .kh-education-deatils .kh-education-item h4 a {
+  color: #2196F3; }
+
+.kh-work .kh-experience-deatils .kh-work-item h4 a {
+  color: #2196F3; }
+
+.portfolio-nav ul li:hover {
+  color: #2196F3; }
+.portfolio-nav ul li.active {
+  color: #2196F3; }
+
+.kh-pricing .kh-pricing:hover .btn {
+  background-color: #0d8aee; }
+.kh-pricing .kh-pricing .fa {
+  color: #b2dbfb; }
+.kh-pricing .kh-pricing h5 {
+  color: #2196F3; }
+
+.kh-blog .kh-blog-item .blog-inner h2 a {
+  color: #fff; }
+.kh-blog .kh-blog-item .blog-inner a {
+  color: #2196F3; }
+.kh-blog .kh-blog-item h2 {
+  color: #2196F3; }
+  .kh-blog .kh-blog-item h2 a {
+    color: #2196F3; }
+    .kh-blog .kh-blog-item h2 a:hover {
+      color: #1791f2; }
+
+.kh-testimonial .kh-client-item img {
+  border: 5px solid #2196F3; }
+.kh-testimonial .owl-controls .owl-dots .owl-dot {
+  border: 1px solid #2196F3; }
+.kh-testimonial .owl-controls .owl-dots .owl-dot.active {
+  background-color: #2196F3; }
+
+.kh-footer-address .kh-address-footer-item .each-icon .fa {
+  border-color: #2196F3; }
+
+.old .navbar-collapse {
+  background-color: #2196F3; }
+.old .navbar-header .navbar-toggler .icon-bar {
+  background-color: #2196F3; }
+.old .navbar-collapse {
+  background-color: #2196F3; }
+
+.new .navbar-collapse {
+  background-color: #2196F3; }
+.new .navbar-header .navbar-toggler .icon-bar {
+  background-color: #2196F3; }
+.new .navbar-collapse {
+  background-color: #2196F3; }
+
+.portfolio-nav ul li.current span {
+  border-bottom: 2px solid #2196F3; }
+
+.kh-project-gallery .grid-item figure:hover figcaption {
+  background: rgba(33, 150, 243, 0.9); }
+
+.kh-featured-project .kh-featured-item .kh-featured-project-content .project-category {
+  color: #2196F3; }
+
+.kh-single-project-slide .owl-controls .owl-dots .owl-dot {
+  border: 1px solid #2196F3; }
+.kh-single-project-slide .owl-controls .owl-dots .owl-dot.active {
+  background-color: #2196F3; }
+
+.kh-service .kh-service-item a {
+  color: #2196F3; }
+
+.kh-pagination .page-link:hover {
+  color: #2196F3; }
+
+.kh-author-info .social-icon li a:hover {
+  color: #2196F3; }
+
+.kh-blog-category ul li a:hover {
+  color: #2196F3; }
+
+.kh-blog-next-prev-post a {
+  color: #2196F3; }
+
+.comment-deatils span {
+  color: #2196F3; }
+
+.btn.btn-fill {
+  background-color: #2196F3; }
+
+.kh-pricing .kh-pricing .fa {
+  color: #2196F3; }
+
+/*# sourceMappingURL=blue-munsell.css.map */
