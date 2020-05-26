@@ -351,7 +351,7 @@ var translate = function (jsdata)
 }
 
 var setLanguage = function (lang){
-	langCode = lang==null?navigator.language.substr (0, 2):lang;
+	langCode = lang==null?/*navigator.language.substr (0, 2)*/'en':lang;
 
 	if (langs.includes(langCode)){
 		//$.getJSON('http://localhost:8082/en.json?format=json&callback=parseJSON', translate);
@@ -364,8 +364,19 @@ var setLanguage = function (lang){
 		console.log("error");	
 }
 
-$("#language-select").change(function(){
+/*$("#language-select").change(function(){
 	var selectedLang = $(this).children("option:selected").val();
+	setLanguage(selectedLang);
+});*/
+
+$("#lang-1").click(function(){
+	var selectedLang = $('#flag1').attr('class').split(' ')[1];
+	$('#flag1').attr('class','flag '+langCode);
+	setLanguage(selectedLang);
+});
+$("#lang-2").click(function(){
+	var selectedLang = $('#flag2').attr('class').split(' ')[1];
+	$('#flag2').attr('class','flag '+langCode);
 	setLanguage(selectedLang);
 });
 

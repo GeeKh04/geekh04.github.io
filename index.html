@@ -32,10 +32,9 @@
         <!-- Custom CSS-->
         <link rel="stylesheet" href="assets/css/styles.css">
         <link rel="stylesheet" href="assets/css/responsive.css">
-        <!-- Switch button CSS->
-        <link rel="stylesheet" href="assets/css/dark-mode-switch-button.css"-->
-        <!-- Dark Mode Style -->
-        <link rel="stylesheet" href="assets/dark-mode/dark-mode.css">
+        <!-- Settings Menu Style -->
+        <link rel="stylesheet" type="text/css" href="assets/settings/css/settings.css" />
+        <link rel="stylesheet" href="assets/settings/css/flags.css" rel="stylesheet">
         
 
         <!-- Language button CSS-->
@@ -124,15 +123,6 @@
                     <div class="row section-separator xs-column-reverse vertical-middle-content home-padding">
                         <div class="col-sm-6">
                             <div class="kh-header-info">
-                                <div class="language-picker js-language-picker" data-trigger-class="btn btn--subtle js-tab-focus">
-                                    <form action="" class="language-picker__form">
-                                      <select name="language-picker-select" id="language-select">
-                                        <option value="en" selected>English</option>
-                                        <option value="fr">Français</option>
-                                        <option value="ar">العربية</option>
-                                      </select>
-                                    </form>
-                                  </div>
                                 <div class="kh-promo wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.1s">
                                     <span data-lang="hello"></span>
                                 </div>
@@ -908,11 +898,52 @@
                 </div>
             </div>
         </footer>
-    <!-- DARK MODE SWITCH -->
-   <div class="dark-mode-style-switch" id="switch-style">
-        <a id="toggle-switcher" class="switch-button" data-toggle="tooltip" title="Dark Mode" alt="Mode">
-            <i class="fa fa-moon-o" id="mode-icon"></i>
-        </a>
+    <!-- SETTINGS MENU ->
+    <!-div class="language-picker js-language-picker" data-trigger-class="btn btn--subtle js-tab-focus">
+        <form action="" class="language-picker__form">
+          <select name="language-picker-select" id="language-select">
+            <option value="en" selected>English</option>
+            <option value="fr">Français</option>
+            <option value="ar">العربية</option>
+          </select>
+        </form>
+    </div-->
+
+    <div class="share">
+        <button class="share-toggle-button">
+            <i class="share-icon fa fa-bars"></i>
+        </button>
+        <ul class="share-items">
+            <!-- DARK MODE SWITCH -->
+            <li class="share-item">
+                <a href="#" id="toggle-switcher" class="share-button" data-toggle="tooltip" title="Dark Mode">
+                    <i class="share-icon fa fa-moon-o" id="mode-icon"></i>
+                </a>
+            </li>
+            <li class="share-item">
+                <a href="#" class="share-button">
+                    <i class="share-icon fa fa-commenting-o"></i>
+                </a>
+            </li>
+            <li class="share-item" id="lang-1">
+                <a href="#" class="share-button">
+                    <div class="flag-wrap">
+                        <div class="selected-country">
+                            <span id="flag1" class="flag fr"></span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="share-item" id="lang-2">
+                <a href="#" class="share-button">
+                    <div class="flag-wrap">
+                        <div class="selected-country">
+                            <span id="flag2" class="flag ar"></span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </ul>
     </div>
     
     <!--
@@ -958,6 +989,8 @@
 
     <!-- Dark Mode scripts -->
     <script type="text/javascript" src="assets/dark-mode/dark-mode.js"></script>
+    <script src="assets/settings/js/TweenMax.min.js"></script>
+	<script src="assets/settings/js/settings.js"></script>
 
     <!-- Multilanguage scripts -->
     <script src="assets/lang/lang.js"></script>
