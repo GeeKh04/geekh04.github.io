@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <title>KHOUNA Rida - Personal Portfolio</title>
+    <!-- Required meta tags -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="google" value="notranslate" />
+    <meta http-equiv="Content-Language" content="en_US" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="KHOUNA Rida Personal Portfolio & Personal Website." />
+    <meta name="keywords" content="engineer, software, innovation, creative, cv, designer,  online cv, online resume, powerful portfolio, professional, professional resume, responsive, resume, vcard " />
+    <meta name="developer" content="GeeKhouna">
+    <meta property="og:title" content="KHOUNA Rida - Personal Portfolio" />
+    <meta property="og:image" content="assets/og-image.png" />
+    <meta property="og:site_name" content="KHOUNA Rida" />
+    <meta property="og:description" content="KHOUNA Rida Personal Portfolio & Personal Website." />
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+     <!-- FAV AND ICONS   -->
+     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+     <link rel="shortcut icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.ico">
+     <link rel="manifest" href="/site.webmanifest">
+     <!--link rel="mask-icon" href="assets/images/safari-pinned-tab.svg" color="#5bbad5"-->
+     
+    <!-- Google Font-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik&display=swap">
+    <!-- Font Awesome -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- CSS Style -->
+    <link rel="stylesheet" href="assets/styles/reset.min.css" />
+    <link rel="stylesheet" href="assets/styles/main.css" />
+    <link rel="stylesheet" href="assets/styles/contact.css" />
+    <!-- Owl Carousel CSS-->
+    <link rel="stylesheet" href="assets/styles/plugins/owl.carousel.css" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-168429925-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-168429925-1');
+    </script>
+</head>
+
+<body class="contact-page" onload="setLanguage()">
+    <!--***************** MENU *****************-->
+    <header>
+        <div class="header-wrapper">
+            <nav class="nav-primary">
+                <button class="hamburger no-focus-outline" type="button" aria-label="Menu" aria-controls="navigation">
+                    <div class="hamburger-box" onclick="toggleMenu()">
+                        <div class="hamburger-icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <span class="hamburger-title" data-lang="menu"></span>
+                    </div>
+                </button>
+            </nav>
+        </div>
+        <div class="nav-box" id="nav-box">
+            <div class="nav-items">
+                <a href="index.html#home" class="nav-item no-focus-outline" data-lang="home"></a>
+                <a href="index.html#about" class="nav-item no-focus-outline" data-lang="about" onclick="closeMobileMenu()"></a>
+                <a href="index.html#skills" class="nav-item no-focus-outline" data-lang="skills" onclick="closeMobileMenu()"></a>
+                <a href="index.html#projects" class="nav-item no-focus-outline" data-lang="projects" onclick="closeMobileMenu()"></a>
+                <a href="index.html#experiences" class="nav-item no-focus-outline" data-lang="experiences" onclick="closeMobileMenu()"></a>
+                <a href="index.html#education" class="nav-item no-focus-outline" data-lang="education" onclick="closeMobileMenu()"></a>
+                <a href="index.html#portfolio" class="nav-item no-focus-outline" data-lang="portfolio" onclick="closeMobileMenu()"></a>
+                <a href="contact.html" class="nav-item no-focus-outline" data-lang="contact"></a>
+            </div>
+            <hr>
+            <div class="contact-wrapper">
+                <div class="address">
+                    <p data-lang="address-text2"></p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--*************** SCROLL DOWN ***************-->
+    <div class="scroll-indicator">
+        <div class="scroll-wrapper">
+            <div class="scroller"></div>
+        </div>
+        <p class="scroll-caption" data-lang="scroll-down"></p>
+    </div>
+    <!--***************** Content *****************-->
+    <div class="contact-section">
+
+        <div class="contact-hero-wrapper">
+            <img src="assets/images/contact-banner.jpg" class="contact-hero-img" alt="Reach Us illustration">
+            <h1 class="hero-title"><b data-lang="interested-to-work"></b></h1>
+        </div>
+        <div class="contact-details-wrapper">
+            <div class="content-wrapper contact-form-wrapper">
+                <form class="contact">
+                    <label data-lang="interested-to-text"></label>
+                    <div class="left-form-data">
+                        <input id="name" type="text" class="form-field" data-type="text" data-lang="form-firstname">
+                        <input id="email" type="email" class="form-field" data-type="email" data-lang="form-email">
+                    </div>
+                    <div class="right-form-data">
+                        <textarea id="message" rows="4" class="form-field" data-type="text" data-lang="form-message"></textarea>
+                    </div>
+                    <div class="clear"></div>
+                </form>
+                <button type="button" class="apply-now" onclick="addContactQuery()" data-lang="send-message"></button>
+            </div>
+            <div class="content-wrapper address-wrapper">
+                <label><i class="fa fa-map-marker"></i><span data-lang="my-address"></span></label>
+                <p class="hero-copy" data-lang="address-text2"></p><br/>
+                <label><i class="fa fa-envelope"></i><span data-lang="email"></span><a href="mailto:ridakhouna@gmail.com" style="opacity: .8;text-decoration: none;color: #312747;"> ridakhouna@gmail.com</a></label>
+                <label><i class="fa fa-phone"></i><span data-lang="phone"></span><a href="callto:+212640401496" style="opacity: .8;text-decoration: none;color: #312747;"> +212 6 40 40 14 96</a></label>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <!--=================== Alert ===================-->
+    <div class="site-status-wrapper">
+        <span class="error-message" data-lang="error-message"></span>
+        <span class="success-message" data-lang="success-message"></span>
+    </div>
+    <footer class="footer-section">
+        <div class="footer-menu">
+            <div class="footer-nav">
+                <a href="index.html#home" data-lang="home"></a>
+                <a href="index.html#about" data-lang="about"></a>
+                <a href="index.html#skills" data-lang="skills"></a>
+                <a href="index.html#projects" data-lang="projects"></a>
+                <a href="index.html#experiences" data-lang="experiences"></a>
+                <a href="index.html#education" data-lang="education"></a>
+                <a href="index.html#portfolio" data-lang="portfolio"></a>
+                <a href="contact.html" data-lang="contact"></a>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/GeeKhouna"><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/Rida_Khouna"><i class="fa fa-twitter"></i></a>
+                <a href="https://github.com/GeeKh04"><i class="fa fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/rida-khouna"><i class="fa fa-linkedin"></i></a>
+            </div>
+            <p>
+                Copyright &copy;
+                <script> document.write(new Date().getFullYear());</script>
+                <a href="https://www.khouna.com" data-lang="last-name"></a>
+            </p>
+        </div>
+    </footer>
+
+    <!--=================== SCRIPTS ===================-->
+    <!-- TweenMax : animation tool -->
+    <script src="assets/scripts/plugins/TweenMax.min.js" type="text/javascript"></script>
+    <script src="assets/scripts/plugins/jquery-2.2.4.min.js" type="text/javascript"></script>
+    <!-- jQuery UI  : user interface library  -->
+    <script src="assets/scripts/plugins/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="assets/scripts/plugins/jquery.ui.touch-punch.min.js" type="text/javascript"></script>
+    <!--Wavify : simple library to draw animated wave -->
+    <script src="assets/scripts/plugins/wavify.js" type="text/javascript"></script>
+    <script src="assets/scripts/plugins/jquery.wavify.js" type="text/javascript"></script>
+    <!-- OwlCarousel : enabled jQuery plugin that let create a beautiful responsive carousel slider. -->
+    <script src="assets/scripts/plugins/owl.carousel.js" type="text/javascript"></script>
+    <!-- Multilanguage scripts -->
+    <script src="lang/lang.js"></script>
+
+    <script src="assets/scripts/main.js" type="text/javascript"></script>
+    <script src="assets/scripts/contact.js" type="text/javascript"></script>
+</body>
+
+</html>

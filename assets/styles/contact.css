@@ -1,0 +1,234 @@
+body,
+html {
+    overflow: auto;
+    height: auto;
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+.container {
+    height: auto;
+    overflow: auto;
+    position: relative;
+}
+
+.scroll-caption {
+    color: #312747;
+}
+
+.contact-section {
+    width: 80vw;
+    margin: auto;
+    display: block;
+    margin-top: 7rem;
+}
+
+.content-wrapper {
+    width: calc(50% - 4rem);
+    float: left;
+    padding: 2rem;
+    display: inline-block;
+}
+
+.content-wrapper img {
+    width: 130%;
+    display: block;
+    margin: auto;
+    margin-left: -14rem;
+    margin-top: -2rem;
+}
+
+.contact-section .hero-title {
+    text-align: left;
+    font-size: 4.5rem;
+    line-height: .6em;
+    padding-top: 2rem;
+}
+
+.contact-section .hero-title b {
+    height: 4rem;
+    line-height: 4.5rem;
+}
+
+.contact-section .hero-copy {
+    width: 100%;
+    /*margin: 0;*/
+    margin: 0 0 1rem 0;
+    line-height: 2rem;
+    opacity: .8;
+    color: #312747;
+    font-size: .85rem;
+}
+
+.form-title {
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #312747;
+}
+
+
+.contact-hero-wrapper {
+    position: relative;
+}
+
+.contact-hero-wrapper h1 {
+    position: relative;
+    z-index: 3;
+    width: 50%;
+    margin: 0 0 5rem;
+}
+
+.contact-hero-img {
+    position: absolute;
+    top: -4rem;
+    right: 0;
+    width: 65%;
+}
+
+.contact-details-wrapper {
+    position: relative;
+    z-index: 5;
+    background: #FFF;
+}
+
+.contact-details-wrapper::before {
+    position: absolute;
+    content: '';
+    left: 40%;
+    height: 10rem;
+    width: 60%;
+    bottom: 100%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+}
+
+
+
+.contact-form-wrapper .apply-now {
+    margin: 1rem 0 3rem;
+    font-size: .75rem;
+    padding: .8rem 1.3rem;
+    border-radius: 3rem;
+    background: #ff4f44;
+    color: #FFF;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    outline: none;
+    font-family: 'Rubik', sans-serif;
+    border: none;
+}
+
+.content-wrapper.contact-form-wrapper label {
+    margin-bottom: 1.5rem;
+}
+
+.contact textarea {
+    margin-bottom: 0rem;
+    font-family: 'Rubik', sans-serif;
+}
+
+.left-form-data,
+.right-form-data {
+    width: calc(50% - 2rem);
+    float: left;
+    padding-right: 2rem;
+}
+
+.content-wrapper label {
+    display: block;
+    font-weight: 600;
+    font-size: .85rem;
+    color: #312747;
+    margin-bottom: .75rem;
+    letter-spacing: .15rem;
+    text-transform: uppercase;
+}
+
+.address-wrapper .fa {
+    margin-right: .4rem;
+    color: #ff4f44;
+}
+
+.map-wrapper {
+    position: relative;
+    clear: both;
+    display: block;
+    margin: auto;
+    border-bottom: 3.5rem solid #ff4f44;
+    height: 65vh;
+}
+
+.map-wrapper::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    height: 10rem;
+    width: 100%;
+    top: 0;
+    z-index: 3;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+#map {
+    height: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+    .contact-section {
+        width: 90vw;
+        margin-top: 3rem;
+    }
+
+    .content-wrapper {
+        display: block;
+        clear: both;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 2rem;
+    }
+
+    .contact-details-wrapper::before {
+        width: 100%;
+        left: 0;
+    }
+
+    .content-wrapper .hero-title {
+        margin: 0;
+    }
+
+    .content-wrapper img {
+        width: 100%;
+        margin: 0;
+        margin-left: -1rem;
+    }
+
+    .left-form-data,
+    .right-form-data {
+        width: 100%;
+        clear: both;
+        padding: 0;
+    }
+
+    .map-wrapper {
+        height: 80vh;
+    }
+
+    .contact-hero-wrapper h1 {
+        width: 100%;
+        font-size: 3.5rem !important;
+        margin-bottom: 2rem;
+    }
+
+    .contact-section .hero-title b {
+        height: 3rem;
+        line-height: 3.5rem;
+    }
+
+    .contact-hero-img {
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto;
+        width: 100%;
+    }
+}
