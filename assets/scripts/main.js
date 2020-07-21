@@ -11,7 +11,7 @@ var winHeight, winWidth,
 $(document).ready(function () {
   console.log("okkkkkk");
   load();
-  /*checkResponsive();
+  checkResponsive();
   generateWaves();
   qualitiesHover();
   qualitiesHover2();
@@ -29,7 +29,7 @@ $(document).ready(function () {
   var wow = new WOW({
     mobile: false  // trigger animations on mobile devices (default is true)
   });
-  wow.init();*/
+  wow.init();
 });
 function load(){
   var translate = new Translate();
