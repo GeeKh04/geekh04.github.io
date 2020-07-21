@@ -1,5 +1,4 @@
 function Translate() { 
-    console.log("okkkk");
     //initialization
     this.init =  function(attribute, lng){
         this.attribute = attribute;
