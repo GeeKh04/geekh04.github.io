@@ -44,9 +44,18 @@
     <!-- Fancybox-->
     <link rel="stylesheet" href="assets/styles/plugins/jquery.fancybox.min.css">
 
-    <script src="assets/scripts/plugins/jquery-2.2.4.min.js" type="text/javascript"></script>
     <!-- Multilanguage scripts ->
     <script src="lang/lang.js"></script-->
+    <script src="translate.js"></script>
+    <script>
+    function load(){
+        var translate = new Translate();
+        var currentLng = 'en';//'fr'
+        var attributeName = 'data-lang';
+        translate.init(attributeName, currentLng);
+        translate.process(); 
+    }
+    </script>
     
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-168429925-1"></script>
@@ -62,8 +71,9 @@
 
 </head>
 
-<body class="home-page no-scroll">
+<body class="home-page no-scroll" onload="load()">
     <!-- PROJECTS Modal -->
+    <h1 data-lang="contact"></h1>
     <div id="modal_container1" class="light-section" style="overflow-y: scroll;">
         <div class="mixed-bunch" id="1">
             <span class="modal_close" id="1"> X </span>
@@ -863,6 +873,7 @@
     <!--=================== SCRIPTS ===================-->
     <!-- TweenMax : animation tool -->
     <script src="assets/scripts/plugins/TweenMax.min.js" type="text/javascript"></script>
+    <script src="assets/scripts/plugins/jquery-2.2.4.min.js" type="text/javascript"></script>
     <!-- jQuery UI  : user interface library  -->
     <script src="assets/scripts/plugins/jquery-ui.min.js" type="text/javascript"></script>
     <script src="assets/scripts/plugins/jquery.ui.touch-punch.min.js" type="text/javascript"></script>

@@ -466,9 +466,9 @@ var translate = function (jsdata)
 	{
 		var strTr = jsdata [$(this).attr ('data-lang')];
 		//$(this).html (strTr);
-		$(this).contents().filter(function(){
+		/*$(this).contents().filter(function(){
 			return (this.nodeType == 3);
-		}).remove();
+		}).remove();*/
 		$(this).prepend(strTr);
 	});
 
@@ -521,7 +521,3 @@ var deleteRTL = function () {
 	$('html').attr("lang", "en");
 	$('body').removeClass('kh-rtl');
 }
-
-$(document).ready(function(){ 
-	
-  });
