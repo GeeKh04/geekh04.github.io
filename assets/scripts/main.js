@@ -9,7 +9,7 @@ var winHeight, winWidth,
   sectionPositionsCalculated = false;
 
 $(document).ready(function () {
-  "use strict";
+  load();
   checkResponsive();
   generateWaves();
   qualitiesHover();
@@ -30,6 +30,13 @@ $(document).ready(function () {
   });
   wow.init();
 });
+function load(){
+  var translate = new Translate();
+  var currentLng = 'en';//'fr'
+  var attributeName = 'data-lang';
+  translate.init(attributeName, currentLng);
+  translate.process(); 
+}
 
 function checkResponsive() {
   winHeight = $(window).height();
