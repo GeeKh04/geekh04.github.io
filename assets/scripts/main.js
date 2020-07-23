@@ -9,7 +9,6 @@ var winHeight, winWidth,
   sectionPositionsCalculated = false;
 
 $(document).ready(function () {
-  console.log("okkkkkk");
   load();
   checkResponsive();
   generateWaves();
@@ -31,6 +30,7 @@ $(document).ready(function () {
   });
   wow.init();
 });
+
 function load(){
   var translate = new Translate();
   var currentLng = 'en';//'fr'
@@ -223,7 +223,7 @@ function sliderButton() {
               slider.removeClass();
               $('.slider').removeClass('enabled');
               setTimeout(function () {
-                $('.notifications').removeClass('notify-1 notify-2 notify-3');
+                $('.notifications').removeClass('notify-1');
               }, 1000);
             }, 6500);
           } else {
@@ -417,12 +417,35 @@ function qualitiesHover2() {
     }
   });
 
+  /*$('.portfolio-nav1 li').mouseover(function () {
+    $('.portfolio-nav1 .current').removeClass('current');
+    $(this).addClass('current');
+
+    var selector = $(this).attr('data-filter');
+    $container.isotope({
+      filter: selector,
+      animationOptions: {
+        queue: true
+      }
+    });
+    return false;
+  });*/
+
+
   var list = $('.qualities1 .quality');
 
   list.hover(function () {
     list.removeClass('active');
     $(this).addClass('active');
 
+    /*var qualityName = ($('.active .qib2 span').attr('id'));
+    if(qualityName=='all'){
+      $('.qualities-image-list-wrapper .work-copy1').addClass('show');
+    } else{
+      $('.qualities-image-list-wrapper .work-copy1').removeClass('show');
+      $('.qualities-image-list-wrapper .' + qualityName).addClass('show');
+    }*/
+    
     var selector = $(this).attr('data-filter');
     $container.isotope({
       filter: selector,
@@ -432,6 +455,7 @@ function qualitiesHover2() {
     });
   });
 }
+
 // Job And Education
 function initAccordion() {
   $('.job-accordion').click(function () {
