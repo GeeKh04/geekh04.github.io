@@ -9,6 +9,7 @@ var winHeight, winWidth,
   sectionPositionsCalculated = false;
 
 $(document).ready(function () {
+  "use strict";
   load();
   checkResponsive();
   generateWaves();
@@ -200,6 +201,7 @@ function sliderButton() {
             left: 0
           });
           slider.removeClass();
+          //slider.children('span').text('Swiggyit');
         }
       } else {
         if (ui.position.left < (slider.outerWidth() - $(this).outerWidth() * 2)) {
@@ -214,6 +216,7 @@ function sliderButton() {
           });
           slider.removeClass().addClass('enabled');
           $('.slider').addClass('enabled');
+          //slider.children('span').text('Swiggy It');
           $('.slider .drag').draggable('disable');
           if (isMobile == true) {
             resetImages();
@@ -221,9 +224,10 @@ function sliderButton() {
             setTimeout(function () {
               $('.slider .drag').draggable('enable');
               slider.removeClass();
+              //slider.children('span').text('Swiggy it');
               $('.slider').removeClass('enabled');
               setTimeout(function () {
-                $('.notifications').removeClass('notify-1');
+                $('.notifications').removeClass('notify-1 notify-2 notify-3');
               }, 1000);
             }, 6500);
           } else {
@@ -232,6 +236,7 @@ function sliderButton() {
             setTimeout(function () {
               $('.slider .drag').draggable('enable');
               slider.removeClass();
+              //slider.children('span').text('Swiggy it');
               $('.slider').removeClass('enabled');
             }, 8500);
           }
@@ -252,8 +257,9 @@ function resetImages() {
   $('.geekh-arm').attr('src', '');
 
   $('.cup-with-shadow').removeClass('cup-appear cup-appear-mob');
+  // $('.cup-with-shadow').addClass('disappear');
   $('.notifications').removeClass('notify-1 notify-2 notify-3');
-  $('.block-1').removeClass('notification-disappear');
+  $('.block-1'/*, .block-2, .block-3'*/).removeClass('notification-disappear');
 }
 
 // Function to reveal all animations in the first frame when desktop is detected
@@ -266,25 +272,40 @@ function webAnimations() {
       $('.notifications').addClass('notify-1');
       $('.block-1').addClass('notification-appear');
       // Download CV
-      var link=document.createElement('a');
+      /*var link=document.createElement('a');
       document.body.appendChild(link);
       link.href="./docs/rida_khouna_cv.pdf";
       link.download="rida_khouna_cv";
       link.click();
-      document.body.removeChild(link);
+      document.body.removeChild(link);*/
     }, 500);
 
     setTimeout(function () {
       $('.geekh-arm').removeClass('disappear').addClass('arrive');
       $('.geekh-arm').attr('src', srcArm);
+      //$('.notifications').addClass('notify-2');
+      //$('.block-2').addClass('notification-appear');
     }, 1500);
 
     $('.cup').addClass('cup-disappear');
     $('.cup-with-shadow').removeClass('disappear').addClass('cup-appear');
 
+    //$('.notifications').addClass('notify-1');
+    //$('.block-1').addClass('notification-appear');
+
     setTimeout(function () {
+      //$('.notifications').addClass('notify-3');
+      //$('.block-3').addClass('notification-appear');
       $('.block-1').removeClass('notification-appear').addClass('notification-disappear');
     }, 3000);
+
+    /*setTimeout(function() {
+      $('.block-2').removeClass('notification-appear').addClass('notification-disappear');
+    }, 4500);
+
+    setTimeout(function() {
+      $('.block-3').removeClass('notification-appear').addClass('notification-disappear');
+    }, 6000);*/
 
   }, 500);
 }
@@ -302,6 +323,8 @@ function mobileAnimations() {
     setTimeout(function () {
       $('.geekh-arm').removeClass('disappear').addClass('arrive');
       $('.geekh-arm').attr('src', srcArm);
+      //$('.notifications').addClass('notify-2');
+      //$('.block-2').addClass('notification-appear');
 
     }, 1500);
 
@@ -309,9 +332,18 @@ function mobileAnimations() {
     $('.block-1').addClass('notification-appear');
 
     setTimeout(function () {
+      //$('.notifications').addClass('notify-3');
+      //$('.block-3').addClass('notification-appear');
       $('.block-1').removeClass('notification-appear').addClass('notification-disappear');
     }, 3000);
 
+    /*setTimeout(function() {
+      $('.block-2').removeClass('notification-appear').addClass('notification-disappear');
+    }, 4500);
+
+    setTimeout(function() {
+      $('.block-3').removeClass('notification-appear').addClass('notification-disappear');
+    }, 6000);*/
   }, 500);
 }
 
@@ -343,9 +375,11 @@ function changeHeaderLogo() {
   if ($('body').hasClass('hide-hero')) {
     $('.logo').removeClass('logo-active');
     $('.logo-white').addClass('logo-active');
+    //$('.hamburger-box').addClass('white');
   } else {
     $('.logo-white').removeClass('logo-active');
     $('.logo').addClass('logo-active');
+    //$('.hamburger-box').removeClass('white');
   }
 }
 
@@ -445,7 +479,6 @@ function qualitiesHover2() {
       $('.qualities-image-list-wrapper .work-copy1').removeClass('show');
       $('.qualities-image-list-wrapper .' + qualityName).addClass('show');
     }*/
-    
     var selector = $(this).attr('data-filter');
     $container.isotope({
       filter: selector,
@@ -651,6 +684,7 @@ function showModal(id) {
   //disableScroll();
   $("#modal_container"+id).show();
   /*$("#project1_popup").on('click',function () {  // Custom Show button code.
+    console.log("okkkk");
     /*disableScroll();*
     //$("#modal_container").show();
   });*/
@@ -673,3 +707,43 @@ function closeModal() {
     }
   });
 }
+
+
+/*function toggleApplicationModal(jobPosition, jobSheetName) {
+    $('.application-modal').addClass('show');
+    $('.application-modal-position b').html(jobPosition);
+    $('.application-modal').attr('data-sheet', jobSheetName);
+
+    $(document).on('click', '.application-modal .fa-plus', function () {
+        $('.application-modal').removeClass('show');
+    })
+}*/
+/*
+function processApplication() {
+    var errorFree = processForm();
+    if (errorFree) {
+        var fileData = $('.upload-btn-wrapper input[type="file"]').prop('files')[0];
+        var formData = new FormData();
+
+        formData.append('resume', fileData);
+        formData.append('name', $('#name').val());
+        formData.append('email', $('#email').val());
+        formData.append('message', $('#message').val());
+        formData.append('job-position', $('.application-modal-position b').html());
+        formData.append('sheet-name', $('.application-modal').attr('data-sheet'));
+
+        $.ajax({
+            type: 'post',
+            url: 'functions/add-application.php',
+            data: formData,
+            cache: false,
+            contentType: false,
+            processData: false,
+            success: function (data) {
+                showStatusMessage('success');
+                processingForm = false;
+                clearForm();
+            }
+        });
+    }
+}*/

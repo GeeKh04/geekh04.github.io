@@ -35,16 +35,16 @@ footer {
   content: '';
   width: 100vw;
   background: #fff;
-  height: 60vh; 
+  height: 60vh;    /***********66***************************height: 70vh;**********************************/
   position: absolute;
   bottom: -7rem;
   z-index: 3;
 }
 
 .light-section .wave-left-1 {
-  left: -15%;
+  left: -15%;  /***********************************************-20%;****************************************/
   top: 0%;
-  transform: rotate3d(0, 0, 1, 20deg);
+  transform: rotate3d(0, 0, 1, 20deg); /**********************************************28deg***************/
   z-index: 1;
 }
 
@@ -66,7 +66,7 @@ footer {
 .light-section .wave-right {
   position: absolute;
   width: 100%;
-  filter:blur(5px);
+  filter:blur(5px);/*drop-shadow(0 0 1rem #6e6d6c);*************************************************/
 }
 
 .light-section .wave-right-1 {
@@ -126,8 +126,8 @@ footer {
 .light-section .hero-copy {
   width: 90%; 
   display: block;
-  padding: 25vh 0 0;
-  z-index: 4;   
+  padding: 25vh 0 0;  /**************************************25vh 0 5rem; ******************/
+  z-index: 4;   /**************************************3%******************/
   margin: 0 0 0 17%;
   float: none;
 }
@@ -140,11 +140,11 @@ footer {
 
 .light-section .hand-client {
   position: absolute;
-  top: 7%;   
-  left: 36%; 
-  height: 35%; 
+  top: 7%;   /**********************0*************************/
+  left: 36%;  /**********************50%*************************/
+  height: 35%; /**********************35%*************************/
   transform: translate3d(calc(-50% + 8rem), 0, 0);
-  z-index: 1;   
+  z-index: 1;    /********************5*********************/
 }
 
 .light-section .hand-geekh {
@@ -152,19 +152,19 @@ footer {
   bottom: 0rem;
   right: 0;
   height: 75%;
-  z-index: 3;   
+  z-index: 3;   /********************4*********************/
 }
 
 .light-section .work-img {
   position: absolute;
-  top: 71.5%;          
-  left: 2.5%;   
-  width: 12%; 
+  top: 71.5%;           /**********************0%**************************/
+  left: 2.5%;        /**********************10%*************************/
+  width: 12%;         /**********************25%*************************/
   animation: rotate 10s infinite linear;
 }
 
 .light-section .move-1 {
-  transform: translate3d(1.5vw, -1.5vw, 0);
+  transform: translate3d(1.5vw, -1.5vw, 0);  /*transform: translate3d(0, 0, 0);*/
   transition: all 1.5s ease;
 }
 
@@ -357,6 +357,7 @@ footer {
   right: 22vw;
   z-index: -1;
   width: 12vw;
+  /*box-shadow: 0 0 1rem .1rem rgba(0, 0, 0, .25);**********************/
 }
 #modal_container2 .mixed-img-back {
   top: 4%;
@@ -365,8 +366,15 @@ footer {
 }
 
 .light-section .mixed-bunch {
-  position: relative;
-  margin: 3rem 0 0;
+  /*position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+  padding: 45px;*/
+  position: relative;/********************************************/
+  margin: 3rem 0 0;/********************************************/
 }
 
 .light-section .path-headline {
@@ -384,10 +392,11 @@ footer {
 }
 
 .light-section .path {
-  position: relative; 
-  z-index: 15;
-  background-color: #fff; 
-  margin : 10rem auto 0;
+  position: relative; /*++++++++++++++++++++++++*/
+  z-index: 15; /*++++++++++++++++++++++++++++++++*/
+  background-color: #fff; /*++++++++++++++++++++++++++++++++*/
+  margin : 10rem auto 0;       /***********************************************************$$$$$$$$$$**/
+  /*padding-top: 10rem;  ----------------------------------------------------------------------------**/
 }
 
 .light-section .path-copy {
@@ -400,14 +409,14 @@ footer {
 .light-section .path-copy .hero-title {
   display: inline-block;
   margin-right: 3rem;
-  width: 45rem;  
+  width: 45rem;   /********************36rem;*************************/
 }
 
 .light-section .path-copy p {
   display: inline-block;
   color: #312747;
   line-height: 2rem;
-  width: calc(100% - 50rem); 
+  width: calc(100% - 50rem); /******************** width: calc(100% - 40rem);********************/
   vertical-align: top;
   font-size: .85rem;
   margin-top: -1rem;
@@ -418,7 +427,7 @@ footer {
   clear: both;
   width: 80%;
   padding-top: 2rem;
-  margin: 0 auto 0;
+  margin: 0 auto 0;/*----------------------------margin: 0 auto 10rem;-----------------------------------***/
 }
 
 .light-section .job-accordion {
@@ -506,8 +515,8 @@ footer {
 }
 
 .light-section .job-accordion.active .job-title-wrapper button:first-child {
-  background: none;          
-  color: #989898;           
+  background: none;           /********************************/
+  color: #989898;             /********************************/
   display: inline-block;
 }
 
@@ -610,6 +619,7 @@ footer .contact-block h4 {
 
 footer .connect-content p {
   font-size: .85rem;
+  /*width: 70%;***************************************/
   line-height: 1.5rem;
   margin-top: .5rem;
 }
@@ -858,7 +868,7 @@ footer .footer-menu {
   }
 
   .light-section .hero-title {
-    font-size: 2.5rem;  
+    font-size: 2.5rem;   /*************************3rem;******************/
     margin-left: 1rem;
   }
 
@@ -897,10 +907,10 @@ footer .footer-menu {
 
   .light-section .work-img {
     position: absolute;
-    top: 45%;               
+    top: 45%;               /************************12%;**************$$*$*$*$$$******/
     transform: translate3d(0, -50%, 0);
     left: -15%; 
-    width: 25%;       
+    width: 25%;             /************************90%;****************************/
     transform-origin: center;
   }
 
@@ -969,7 +979,7 @@ footer .footer-menu {
     width: 70vw;
   }
   #modal_container2 .mixed-img-right {
-    right: 0.5rem;
+    right: 0.5rem;/*************************-1rem;*************************/
   }
 
   .light-section .mixed-img-back, #modal_container1 .mixed-img-back, #modal_container2 .mixed-img-back {
@@ -987,7 +997,7 @@ footer .footer-menu {
   }
 
   .light-section .mixed-bunch {
-    margin: 1rem auto; 
+    margin: 1rem auto; /**********************7rem auto;********************/
   }
 
   .light-section .mixed-bunch-copy .hero-title {
@@ -996,9 +1006,10 @@ footer .footer-menu {
   }
 
   .light-section .path {
-    position: relative;  
-    z-index: 15;  
-    background-color: #fff;
+    /*margin-top: 70vw;    ********************************************/
+    position: relative;  /*******************************************/
+    z-index: 15;         /*******************************************/
+    background-color: #fff;/*******************************************/
   }
 
   .light-section .path-copy {
@@ -1206,7 +1217,10 @@ footer .footer-menu {
 ================
  VARIABLES
 ================
-*/
+*
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }*/
 
 .kh-portfolio-modal {
   display: none;
@@ -1433,7 +1447,8 @@ footer .footer-menu {
 */
 * {
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  -moz-osx-font-smoothing: grayscale; 
+}
 
 @media only screen and (max-width: 575px) {
   .kh-portfolio-modal-inner {
@@ -1461,6 +1476,7 @@ footer .footer-menu {
     margin-left: 4px; }
 
 }
+
 /***************************************** BOOTSTRAP STYLE ************************************************/
 .row1 {
   display: -ms-flexbox;

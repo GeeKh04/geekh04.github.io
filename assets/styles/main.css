@@ -538,6 +538,7 @@ header hr {
 
 .hero-title {
   font-family: 'Kankin', sans-serif;
+  /*text-transform: uppercase;*/
   color: #312747;
   font-size: 7.5rem;
   margin: auto;
@@ -628,7 +629,7 @@ header hr {
   display: none;
 }
 
-.block-1{
+.block-1/*, .block-2, .block-3 */{
   opacity: 0;
   transition: all 1s ease;
 }
@@ -648,6 +649,14 @@ header hr {
 .notify-1 {
   transform: translate3d(0, -13vh, 0);
 }
+
+/*.notify-2 {
+  transform: translate3d(0, -27vh, 0);
+}
+
+.notify-3 {
+  transform: translate3d(0, -42vh, 0);
+}*/
 
 .notification-appear {
   opacity: 1;
@@ -777,7 +786,7 @@ header hr {
   letter-spacing: .5rem;
   text-transform: uppercase;
   font-family: 'Brandon Grotesque', sans-serif;
-  font-size: 0.75rem;
+  font-size: 0.75rem;   /*********************1rem;************/
 }
 
 .slider div .drag {
@@ -903,6 +912,9 @@ div.enabled .drag svg {
   bottom: 50%;
   transform: rotate3d(0, 0, 1, -20deg)
 }
+/*.waves-wrapper {
+  margin-right: -10px;
+}*/
 
 /* Waves frame rules ends */
 /* Middle frame begins */
@@ -917,7 +929,7 @@ div.enabled .drag svg {
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 100vw;
+  width: 100vw;/*****************************************************************************/
   height: calc(100% - 5vw);
 }
 
@@ -1403,6 +1415,10 @@ div.enabled .drag svg {
   background-color: #312747;
 }
 
+/*.footer-section { ***********************************************************************
+  margin: auto;
+}*/
+
 .footer-nav a {
   transition: all .3s;
   text-decoration: none;
@@ -1489,6 +1505,7 @@ div.enabled .drag svg {
   background: #281f3c;
   background: linear-gradient(to top, rgb(49, 39, 71) 0%, #382e50 100%);
   margin: 0 -10rem 0 -10rem;
+  /*padding: 3rem 0 0 0;*/
 }
 
 .footer .apply-wrapper .apply-now {
@@ -1552,6 +1569,7 @@ div.enabled .drag svg {
 
 .footer-nav {
   text-align: center;
+  /*border-bottom: 1px solid #433a56;*/
   width: 60%;
   margin: 2rem auto 0;
   padding-bottom: 2rem;
@@ -1821,7 +1839,16 @@ div.enabled .drag svg {
     transition: all 0.5s ease;
   }
 }
-/********************************************************************************************/
+/***********************SWIGGYIT****************$$*******************************$$$$$$$$$$$$$$$$$$$$$$*******/
+@keyframes swiggyit {
+  0% {
+    display: none;
+  }
+
+  100% {
+    display: block;
+  }
+}
 
 @keyframes load {
   0% {
@@ -1946,12 +1973,11 @@ and (min-width : 1224px) {
 }
 
 @media screen and (max-width: 1023px) and (min-width: 801px) {
-  .qualities1{ padding-right: 4rem; }
-  .qualityPartoflio1 { 
-    display: none;
-    float: none;
-    cursor: pointer;
-  }
+   /**************************************************************************/
+.qualities1{padding-right: 4rem;}
+.qualityPartoflio1 {display: none;float: none;
+  cursor: pointer;}
+/**************************************************************************/
   .sofa {
     top: 13rem;
     z-index: 1;
@@ -2070,10 +2096,14 @@ textarea:focus {
     width: 100vw;
     padding: .8rem 1rem 0 0;
     height: 6vh;
+    /* box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.4); */
+    /*background: rgba(255, 255, 255, 0.9);************************/
   }
 
   .white-bg {
     height: 6vh;
+    /*box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.4);************************/
+    /*background: rgba(255, 255, 255, 0.9);************************/
   }
 
   .hamburger-icon span {
@@ -2136,8 +2166,8 @@ textarea:focus {
   }
 
   .nav-items .nav-item {
-    font-size: 1.5rem;
-    margin-top: 0;
+    font-size: 1.5rem; /*********************2rem************************/
+    margin-top: 0;/*********************.5rem************************/
     margin-right: -3rem;
   }
 
@@ -2228,6 +2258,14 @@ textarea:focus {
     transform: translate3d(-50%, -13vh, 0);
   }
 
+  /*.notify-2 {
+    transform: translate3d(-50%, -27vh, 0);
+  }
+
+  .notify-3 {
+    transform: translate3d(-50%, -42vh, 0);
+  }*/
+
   .dark-section {
     transform: none;
   }
@@ -2295,6 +2333,7 @@ textarea:focus {
     width: .9rem;
     bottom: -0.8rem;
     left: .5rem;
+    /* right: 0; */
   }
 
   .cup-with-shadow {
@@ -2314,7 +2353,7 @@ textarea:focus {
 
   .slider div span {
     line-height: 2rem;
-    font-size: .7rem;
+    font-size: .7rem;  /***************.85rem******************/
   }
 
   .lab-wrapper::before {
@@ -2608,11 +2647,11 @@ textarea:focus {
     padding: 1rem 2rem;
   }
 
-  .qualities1{ padding-right: 4rem; }
-  .qualityPartoflio1 {
-    display: none;float: none;
-    cursor: pointer;
-  }
+  /**************************************************************************/
+.qualities1{padding-right: 4rem;}
+.qualityPartoflio1 {display: none;float: none;
+  cursor: pointer;}
+/**************************************************************************/
 }
 
 
@@ -2626,13 +2665,11 @@ textarea:focus {
   }
 }
 @media (min-width: 768px){
-  .qualities1{ padding-right: 4rem; }
-
-  .qualityPartoflio1 { 
-    display: none;
-    float: none;
-    cursor: pointer;
-  }
+  /**************************************************************************/
+.qualities1{padding-right: 4rem;}
+.qualityPartoflio1 {display: none;float: none;
+  cursor: pointer;}
+/**************************************************************************/
   .col-md-4 {
       -webkit-box-flex: 0;
       -ms-flex: 0 0 33.333333%;
@@ -2641,21 +2678,17 @@ textarea:focus {
   }
 }
 @media (min-width: 576px){
-  .qualities1{
-    padding-right: 4rem;
-  }
-  .qualityPartoflio1 {
-    display: none;
-    float: none;
-    cursor: pointer;
-  }
-  
+/**************************************************************************/
+.qualities1{padding-right: 4rem;}
+.qualityPartoflio1 {display: none;float: none;
+  cursor: pointer;}
+/**************************************************************************/
   .col-sm-6 {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%;
-  }
+}
 }
 .col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
   position: relative;
@@ -2738,7 +2771,7 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
   max-width: 100%;
   height: auto;
 }
-/*********************************************************************************/
+/************************************************************************$$$$$***********/
 #modal_container1,#modal_container2,#modal_container3{ display:none; }
 #modal_container1,#modal_container2,#modal_container3 {
   margin: 0;
@@ -2749,14 +2782,30 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
   position: fixed;
   background: rgba(70, 71, 72, 0.69);
 }
+/*#sub_div_form { 
+	width: 240px;  
+	height: 210px;
+  margin: 0 auto;
+  background: white;
+  margin-top: 15%;
+  padding: 45px;
+  border: 1px solid #9E9E9E;
+  border-radius: .25em .25em .4em .4em;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}*/
 span.modal_close {
 	position: relative;
   float: right;
   font-weight: 700;
   margin-top: 5px;
   font-size: 2rem;
+  /*width: 15px;
+  height: 15px;*/
   line-height: 15px;
   margin-right: 5px;
+  /*border: 2px solid;
+  border-radius: 90px;*/
   padding: 7px;
   color: white;
 }
@@ -2764,6 +2813,13 @@ span.modal_close {
 span.modal_close:hover {
   color: #e0190b;
 }
+/*
+@media screen and (max-width: 440px) {
+	#sub_div_form { 
+		width: 290px; 
+		padding: 35px;
+	}
+}*/
 
 .job-desc-apply1 {
   color: #312747;
@@ -2771,4 +2827,3 @@ span.modal_close:hover {
   font-weight: bold;
   letter-spacing: .1rem;
 }
-

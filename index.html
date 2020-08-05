@@ -36,7 +36,7 @@
     <!-- CSS Style -->
     <link rel="stylesheet" href="assets/styles/reset.min.css" />
     <link rel="stylesheet" href="assets/styles/main.css" />
-    <link rel="stylesheet" href="assets/styles/light-section.css" />
+    <link rel="stylesheet" href="assets/styles/about.css" />
     <!-- Owl Carousel CSS-->
     <link rel="stylesheet" href="assets/styles/plugins/owl.carousel.css" />
     <!-- Animate CSS-->
@@ -46,6 +46,7 @@
 
     <!-- Multilanguage scripts -->
     <script src="./lang/translate.js"></script>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-168429925-1"></script>
     <script>
@@ -69,7 +70,9 @@
                 <img src="assets/images/project/mystock.gif" alt="mixed-bunch image 1">
             </div>
             <div class="mixed-bunch-copy">
-                <h1 class="hero-title" data-lang="proj1-title"></h1>
+                <!--h4 class="hero-title" data-lang="mobile-dev"></h4-->
+                <h1 class="hero-title" data-lang="proj1-title"><!--br bunch--></h1>
+                <!--h2 class="hero-title" data-lang="proj1-subtitle"></h1-->
                 <p data-lang="proj1-desc1"></p>
                 <br/>
                 <i><b data-lang="proj1-desc2"></b></i>   
@@ -81,11 +84,15 @@
                     <li><span data-lang="proj1-list5"></span></li>
                 </ol>
                 <p><span data-lang="android"></span> - <span data-lang="inventory"></span> - <span data-lang="management-system"></span></p>
+                <!--a href="https://github.com/GeeKh04/my-stock" target="_blank" class="btn btn-fill" data-lang="details"></a-->
                 <a href="https://github.com/GeeKh04/my-stock" name="apply" class="btn-second1 job-desc-apply1">
                     <p data-lang="details"></p>
                 </a>
 
             </div>
+            <!--div class="mixed-img-right">
+                <img src="assets/images/pic-right.jpg" alt="mixed-bunch image 2">
+            </div-->
             <div class="mixed-img-back">
                 <img src="assets/images/project/mystock-logo.png" alt="mixed-bunch image 3">
             </div>
@@ -111,6 +118,7 @@
                     <li><span data-lang="proj2-list4"></span></li>
                 </ol>
                 <p><span data-lang1="event">Event</span> - <span data-lang1="school">School</span> - <span data-lang="management-system"></span> - <span data-lang1="springboot">Springboot</span> - <span data-lang1="reactjs">ReactJS</span></p>
+                <!--a href="https://github.com/GeeKh04/my-stock" target="_blank" class="btn btn-fill" data-lang="details"></a-->
                 <a href="https://github.com/GeeKh04/events-app" name="apply" class="btn-second1 job-desc-apply1">
                     <p data-lang="details"></p>
                 </a>
@@ -125,7 +133,7 @@
         </div>
     </div>
     <!-- End Modal -->
-    <!--*************** SCROLL DOWN ***************-->
+    <!--*************** SCROLL DOWN scroll-caption***************-->
     <div class="scroll-indicator">
         <div class="scroll-wrapper">
             <div class="scroller"></div>
@@ -298,6 +306,12 @@
                                         <span id="agile" data-lang="qualitie-2"></span>
                                     </div>
                                 </li>
+                                <!--li class="quality">
+                                    <div class="quality-item-block qib1">
+                                        <div class="circle"></div>
+                                        <span id="empathetic"></span>
+                                    </div>
+                                </li-->
                             </ul>
                         </div>
                         <div class="right-qualities">
@@ -334,11 +348,21 @@
                     <defs></defs>
                     <path class="waves" d="" />
                 </svg>
+                <!--svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    class="wave-left wave-left-2">
+                    <defs></defs>
+                    <path class="waves" d="" />
+                </svg-->
                 <svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"
                     class="wave-right wave-right-1">
                     <defs></defs>
                     <path class="waves" d="" />
                 </svg>
+                <!--svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    class="wave-right wave-right-2">
+                    <defs></defs>
+                    <path class="waves" d="" />
+                </svg-->
             </div>
             <img src="assets/images/night-sky.jpg" class="sky-img" alt="Night sky with stars">
             <div class="hero-copy">
@@ -347,7 +371,11 @@
                     <b data-lang="services-title2"></b><br>
                     <b></b>
                 </h1>
+                <!--p class="hero-caption">ment</p-->
                 <div class="work-copy">
+                    <!--div class="work-img-wrapper">
+                        <img src="assets/images/wheel.png" alt="food wheel animation" class="work-img">
+                    </div-->
                     <ol>
                         <li>
                             <div data-lang="service-1"></div>
@@ -395,6 +423,8 @@
         <div class="path">
             <div class="path-copy" id="experiences">
                 <h1 class="hero-title" data-lang="experience"></h1>
+                <!--p>In an endeavour to be a flat organisation, we’ve have done away with job grades and job levels.
+                    Instead, we’ve organised ourselves into job types. Here are our current openings.</p-->
             </div>
             <div class="job-accordion-wrapper">
                 <!-- Work Experience -->
@@ -402,6 +432,11 @@
                     <div class="job-title-wrapper">
                         <h4 data-lang="exp1-position"></h4><span data-lang="exp1-organization"></span>
                         <div class="job-apply-btn-wrapper">
+                            <!--button type="button" name="apply"
+                                class="btn-primary job-desc-apply"
+                                onclick="toggleApplicationModal('Technology Catalyst', 'Technology Catalyst - Product Design copy')">
+                                <p>Apply Now</p>
+                            </button-->
                             <button type="button" name="apply" class="btn-primary job-desc-apply">
                                 <p data-lang="view-less"></p>
                             </button>
@@ -519,6 +554,8 @@
         <div class="path">
             <div class="path-copy" id="education">
                 <h1 class="hero-title" data-lang="education"></h1>
+                <!--p>In an endeavour to be a flat organisation, we’ve have done away with job grades and job levels.
+                    Instead, we’ve organised ourselves into job types. Here are our current openings.</p-->
             </div>
             <div class="job-accordion-wrapper">
                 <!-- Education Institutes-->
@@ -631,8 +668,10 @@
                             <div class="clear"></div>
                         </div>
                     </div>
+                    <!--div class="qualities-image-list-wrapper" -->
                     <div class="kh-project-gallery col-sm-12 wow fadeInUp" id="project-gallery" data-wow-duration="0.8s"
                         data-wow-delay="0.5s">
+                        <!--div class="qualities-image"-->
                         <div class="portfolioContainer row1">
                             <!-- Design -->
                             <div class="grid-item col-md-4 col-sm-6 col-xs-12 design">
@@ -697,6 +736,17 @@
                                 </figure>
                             </div>
                             <!--div class="grid-item col-md-4 col-sm-6 col-xs-12 photography">
+                                    <figure>
+                                        <img src="assets/images/portfolio/g9.png" alt="img04">
+                                        <figcaption class="fig-caption">
+                                            <i class="fa fa-search"></i>
+                                            <h5 class="title" data-lang="photography"></h5>
+                                            <span class="sub-title">Photograpy</span>
+                                            <a href="assets/images/portfolio/g9.png" data-fancybox data-src="#kh"></a>
+                                        </figcaption>
+                                    </figure>
+                                </div-->
+                            <div class="grid-item col-md-4 col-sm-6 col-xs-12 photography">
                                 <figure>
                                     <img src="assets/images/portfolio/photography/mogador.jpg" alt="mogador">
                                     <figcaption class="fig-caption">
@@ -707,7 +757,7 @@
                                             data-fancybox="gallery"></a>
                                     </figcaption>
                                 </figure>
-                            </div-->
+                            </div>
                         </div> <!-- End: .grid .project-gallery -->
                     </div> <!-- End: .grid .project-gallery -->
                 </div> <!-- End: .part -->
