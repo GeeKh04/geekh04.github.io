@@ -1716,6 +1716,7 @@ proto.resizeContainer = function() {
     return;
   }
   var size = this._getContainerSize();
+  console.log(size);
   if ( size ) {
     this._setContainerMeasure( size.width, true );
     this._setContainerMeasure( size.height, false );

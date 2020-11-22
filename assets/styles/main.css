@@ -2727,15 +2727,6 @@ textarea:focus {
   margin-right: -15px;
   margin-left: -15px;
 }
-.row1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
-}
 .grid-item {
   margin-bottom: 20px;
 }
