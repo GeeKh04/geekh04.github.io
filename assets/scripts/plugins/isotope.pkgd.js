@@ -3370,6 +3370,7 @@ var trim = String.prototype.trim ?
   };
 
   proto._getContainerSize = function() {
+    console.log(this._mode());
     return this._mode()._getContainerSize();
   };
 
