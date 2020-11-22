@@ -1716,7 +1716,7 @@ proto.resizeContainer = function() {
     return;
   }
   var size = this._getContainerSize();
-  console.log(size);
+
   if ( size ) {
     this._setContainerMeasure( size.width, true );
     this._setContainerMeasure( size.height, false );
@@ -3370,6 +3370,7 @@ var trim = String.prototype.trim ?
   };
 
   proto._getContainerSize = function() {
+    console.log("size");
     console.log(this._mode());
     return this._mode()._getContainerSize();
   };
