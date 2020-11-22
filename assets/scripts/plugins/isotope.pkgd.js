@@ -2594,6 +2594,10 @@ return Item;
 
   Masonry.prototype._getItemLayoutPosition = function( item ) {
     item.getSize();
+    console.log("item");
+    console.log(item);
+    console.log("item.getSize()");
+    console.log(item.getSize());
     // how many columns does this brick span
     var remainder = item.size.outerWidth % this.columnWidth;
     var mathMethod = remainder && remainder < 1 ? 'round' : 'ceil';
