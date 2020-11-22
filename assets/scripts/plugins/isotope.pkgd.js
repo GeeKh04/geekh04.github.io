@@ -70,6 +70,8 @@ function jQueryBridget( namespace, PluginClass, $ ) {
       if ( !$.isPlainObject( opts ) ){
         return;
       }
+      console.log("options");
+      console.log(this.options);
       this.options = $.extend( true, this.options, opts );
     };
   }
