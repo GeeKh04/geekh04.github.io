@@ -70,8 +70,6 @@ function jQueryBridget( namespace, PluginClass, $ ) {
       if ( !$.isPlainObject( opts ) ){
         return;
       }
-      console.log("options");
-      console.log(this.options);
       this.options = $.extend( true, this.options, opts );
     };
   }
@@ -2377,8 +2375,6 @@ return Item;
     // link properties
     if ( isotope ) {
       this.options = isotope.options[ this.namespace ];
-      console.log("options2");
-      console.log(this.options);
       this.element = isotope.element;
       this.items = isotope.filteredItems;
       this.size = isotope.size;
