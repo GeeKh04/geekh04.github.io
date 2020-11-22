@@ -443,9 +443,10 @@ function qualitiesHover() {
 }
 
 function qualitiesHover2() {
-  var $container = $('.qualities1 .quality');
+  var $container = $('.portfolioContainer');
+  //var $container = $('.qualities1 .quality');
   $container.isotope({
-    filter: '*',
+    filter: '.music',
     animationOptions: {
       queue: true
     }
