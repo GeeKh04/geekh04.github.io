@@ -445,7 +445,7 @@ function qualitiesHover() {
 function qualitiesHover2() {
   var $container = $('.portfolioContainer');
   $container.isotope({
-    filter: '*',
+    filter: '.design',
     animationOptions: {
       queue: true
     }
